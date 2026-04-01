@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>شروط الخدمة - ShadowPay</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { opacity: 0; animation: fadeIn 0.5s ease-out forwards; }
+    
+    /* تأكد من ظهور الأيقونات */
+    i[data-lucide] {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .back-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .back-btn:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    
+    /* تنسيقات إضافية لضمان ظهور الأيقونات في جميع العناصر */
+    .section i[data-lucide],
+    .alert-box i[data-lucide],
+    .contact-box i[data-lucide],
+    .accept-box i[data-lucide],
+    .update-box i[data-lucide],
+    .box-header i[data-lucide] {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="about.html">عن التطبيق</a>
+    <a href="help.html">مركز المساعدة</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+    <a href="terms.html" class="active">شروط الخدمة</a>
+  </nav>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <button class="back-btn" onclick="goBack()">
+        <i data-lucide="arrow-right"></i>
+      </button>
+      <div>
+        <h1>شروط الخدمة</h1>
+        <p>القواعد والأحكام</p>
+      </div>
+    </div>
+
+    <!-- Last Updated -->
+    <div class="update-box amber">
+      <i data-lucide="calendar" style="width: 16px; height: 16px; vertical-align: middle; margin-left: 8px;"></i>
+      <p>آخر تحديث: <strong>1 أبريل 2026</strong></p>
+    </div>
+
+    <!-- Intro -->
+    <div class="box fade-in-up">
+      <div class="box-header">
+        <i data-lucide="file-text"></i>
+        <h2>مقدمة</h2>
+      </div>
+      <p>مرحباً بك في ShadowPay. توضح شروط الخدمة هذه القواعد والأحكام التي تحكم استخدامك للتطبيق. استخدامك للتطبيق يعني موافقتك الكاملة على هذه الشروط. إذا كنت لا توافق على أي جزء من هذه الشروط، يرجى عدم استخدام التطبيق.</p>
+    </div>
+
+    <!-- Important Notice -->
+    <div class="alert-box fade-in-up">
+      <i data-lucide="alert-triangle"></i>
+      <div>
+        <h3>تنبيه هام</h3>
+        <p>يرجى قراءة الشروط بعناية قبل استخدام التطبيق. استخدامك للتطبيق يعني موافقتك الكاملة على جميع الشروط والأحكام الواردة أدناه.</p>
+      </div>
+    </div>
+
+    <!-- Sections -->
+    <div class="box fade-in-up stagger">
+      <div class="section">
+        <i data-lucide="check-circle-2"></i>
+        <div>
+          <h3>قبول الشروط</h3>
+          <p>باستخدامك التطبيق، توافق على الالتزام بجميع الشروط والأحكام المنصوص عليها. يحق لنا تعديل هذه الشروط في أي وقت، وسيتم إخطارك بأي تغييرات جوهرية.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="shield-alert"></i>
+        <div>
+          <h3>استخدام الخدمة</h3>
+          <p>يجب استخدام التطبيق بشكل قانوني ومسؤول. يُمنع استخدام التطبيق في أي أنشطة غير قانونية، بما في ذلك غسيل الأموال، الاحتيال، أو أي نشاط ينتهك القوانين المحلية والدولية.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="scale"></i>
+        <div>
+          <h3>الحساب والمسؤولية</h3>
+          <p>أنت مسؤول عن حماية حسابك وكلمة المرور. لا تشارك بيانات حسابك مع أي شخص. أنت مسؤول عن جميع الأنشطة التي تحدث من خلال حسابك. في حالة الاختراق، يرجى إبلاغنا فوراً.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="alert-triangle"></i>
+        <div>
+          <h3>المعاملات المالية</h3>
+          <p>جميع المعاملات تخضع للتحقق والمراجعة. نحن نحتفظ بالحق في إيقاف أو تأخير أي معاملة مشبوهة لحماية أموالك. قد تخضع بعض المعاملات لرسوم إضافية حسب نوع الخدمة.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="x-circle"></i>
+        <div>
+          <h3>القيود والحظر</h3>
+          <p>يُمنع استخدام التطبيق في أنشطة غير قانونية. نحن نحتفظ بالحق في تعليق أو إنهاء أي حساب ينتهك هذه الشروط دون إشعار مسبق. في حالة الحظر، لن تتمكن من فتح حساب جديد.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="gavel"></i>
+        <div>
+          <h3>الملكية الفكرية</h3>
+          <p>جميع الحقوق محفوظة لـ ShadowPay. لا يجوز نسخ أو تعديل أو توزيع أي جزء من التطبيق دون موافقة خطية مسبقة. العلامات التجارية والشعارات محمية بموجب قوانين الملكية الفكرية.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="alert-triangle"></i>
+        <div>
+          <h3>إخلاء المسؤولية</h3>
+          <p>الخدمة مقدمة "كما هي" بدون أي ضمانات. لا نتحمل المسؤولية عن أي خسائر مباشرة أو غير مباشرة ناتجة عن استخدام التطبيق. نوصي بالتحقق من جميع التفاصيل قبل تأكيد المعاملات.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <i data-lucide="scale"></i>
+        <div>
+          <h3>القانون الحاكم</h3>
+          <p>تخضع هذه الشروط لقوانين المملكة العربية السعودية. أي نزاع ينشأ عن هذه الشروط سيتم حله في محاكم الرياض. نحن ملتزمون بحل أي نزاعات بطريقة ودية.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-box amber fade-in-up">
+      <i data-lucide="scale" style="width: 32px; height: 32px; margin-bottom: 12px; color: var(--warning);"></i>
+      <h3>استفسارات قانونية؟</h3>
+      <p>إذا كان لديك أي استفسار قانوني، تواصل مع فريقنا القانوني</p>
+      <button onclick="window.location.href='mailto:legal@shadowpay.com'">تواصل معنا</button>
+    </div>
+
+    <!-- Acceptance -->
+    <div class="accept-box fade-in-up">
+      <i data-lucide="check-circle-2"></i>
+      <p>باستخدامك التطبيق، أنت توافق على هذه الشروط والأحكام</p>
+    </div>
+  </div>
+
+  <script>
+    // تأكد من تهيئة Lucide بعد تحميل الصفحة بالكامل
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        // إذا لم يتم تحميل Lucide بعد، انتظر قليلاً
+        setTimeout(function() {
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          } else {
+            // محاولة أخيرة بعد وقت أطول
+            setTimeout(function() {
+              if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+              }
+            }, 500);
+          }
+        }, 100);
+      }
+    });
+    
+    function goBack() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.close();
+      }
+    }
+    
+    // Animation observer
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    
+    document.querySelectorAll('.fade-in-up').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

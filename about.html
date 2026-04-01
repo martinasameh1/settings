@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>عن التطبيق - ShadowPay</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { opacity: 0; animation: fadeIn 0.5s ease-out forwards; }
+    
+    /* تأكد من أن الأيقونات تظهر بشكل صحيح */
+    i[data-lucide] {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      stroke-width: 1.5;
+    }
+    
+    /* زر الرجوع */
+    .back-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .back-btn:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="about.html" class="active">عن التطبيق</a>
+    <a href="help.html">مركز المساعدة</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+    <a href="terms.html">شروط الخدمة</a>
+  </nav>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <button class="back-btn" onclick="goBack()" id="backButton">
+        <i data-lucide="arrow-right"></i>
+      </button>
+      <div>
+        <h1>عن التطبيق</h1>
+        <p>معلومات حول ShadowPay</p>
+      </div>
+    </div>
+
+    <!-- App Card -->
+    <div class="app-card fade-in-up">
+      <img src="../images/icon.png" alt="ShadowPay" class="app-logo" onerror="this.src='https://placehold.co/80x80/1E8F7A/white?text=SP'" />
+      <h2>ShadowPay</h2>
+      <p class="subtitle">حماية معاملاتك بالذكاء الاصطناعي</p>
+      <div class="version">
+        <span class="dot"></span>
+        الإصدار 1.0.0
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="box fade-in-up">
+      <div class="box-header">
+        <i data-lucide="info"></i>
+        <h2>عن المنصة</h2>
+      </div>
+      <p>ShadowPay هو تطبيق مالي متطور يستخدم أحدث تقنيات الذكاء الاصطناعي لحماية معاملاتك من الاحتيال والتهديدات الأمنية، ويوفر لك تجربة مصرفية آمنة وسريعة.</p>
+      <p style="margin-top: 12px;">هدفنا هو جعل الأمان المالي متاح للجميع من خلال تقنيات ذكية تعمل على مدار الساعة لحماية أموالك وبياناتك.</p>
+    </div>
+
+    <!-- Features -->
+    <div class="box fade-in-up">
+      <div class="box-header">
+        <i data-lucide="sparkles"></i>
+        <h2>المميزات الرئيسية</h2>
+      </div>
+      <div class="grid stagger">
+        <div class="feature">
+          <i data-lucide="shield"></i>
+          <h4>حماية متقدمة</h4>
+          <p>نظام أمان متعدد الطبقات</p>
+        </div>
+        <div class="feature">
+          <i data-lucide="bot"></i>
+          <h4>ذكاء اصطناعي</h4>
+          <p>كشف الاحتيال في الوقت الفعلي</p>
+        </div>
+        <div class="feature">
+          <i data-lucide="lock"></i>
+          <h4>تشفير عالي</h4>
+          <p>حماية AES-256 للبيانات</p>
+        </div>
+        <div class="feature">
+          <i data-lucide="zap"></i>
+          <h4>سريع وفوري</h4>
+          <p>تنفيذ العمليات في ثوانٍ</p>
+        </div>
+        <div class="feature">
+          <i data-lucide="globe"></i>
+          <h4>دعم عالمي</h4>
+          <p>متاح في أكثر من 50 دولة</p>
+        </div>
+        <div class="feature">
+          <i data-lucide="headphones"></i>
+          <h4>دعم 24/7</h4>
+          <p>فريق دعم متاح طوال الوقت</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="box fade-in-up">
+      <div class="box-header">
+        <i data-lucide="trending-up"></i>
+        <h2>بالأرقام</h2>
+      </div>
+      <div class="grid stagger">
+        <div class="stat">
+          <i data-lucide="users"></i>
+          <h2>500K+</h2>
+          <p>مستخدم نشط</p>
+        </div>
+        <div class="stat">
+          <i data-lucide="shield-check"></i>
+          <h2>99.9%</h2>
+          <p>نسبة الأمان</p>
+        </div>
+        <div class="stat">
+          <i data-lucide="globe"></i>
+          <h2>50+</h2>
+          <p>دولة حول العالم</p>
+        </div>
+        <div class="stat">
+          <i data-lucide="star"></i>
+          <h2>4.9</h2>
+          <p>تقييم المستخدمين</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <i data-lucide="heart"></i>
+      <p>صُنع بكل حب</p>
+      <span>© 2026 ShadowPay. جميع الحقوق محفوظة</span>
+    </div>
+  </div>
+
+  <script>
+    // تأكد من تهيئة Lucide بعد تحميل الصفحة بالكامل
+    document.addEventListener('DOMContentLoaded', function() {
+      // تهيئة Lucide icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        // إذا لم يتم تحميل Lucide بعد، انتظر قليلاً
+        setTimeout(() => {
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }, 100);
+      }
+    });
+    
+    // Go back function
+    function goBack() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.close();
+      }
+    }
+    
+    // Add loading animation for images
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('load', function() {
+        this.style.animation = 'scaleIn 0.3s ease-out';
+      });
+    });
+    
+    // Stagger animation observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    
+    document.querySelectorAll('.fade-in-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

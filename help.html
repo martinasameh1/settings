@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>مركز المساعدة - ShadowPay</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { opacity: 0; animation: fadeIn 0.5s ease-out forwards; }
+    .no-results { display: none; text-align: center; padding: 40px; color: var(--text-secondary); }
+    
+    /* تأكد من ظهور الأيقونات */
+    i[data-lucide] {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+    }
+    
+    .back-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 12px;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .back-btn:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="about.html">عن التطبيق</a>
+    <a href="help.html" class="active">مركز المساعدة</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+    <a href="terms.html">شروط الخدمة</a>
+  </nav>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <button class="back-btn" onclick="goBack()">
+        <i data-lucide="arrow-right"></i>
+      </button>
+      <div>
+        <h1>مركز المساعدة</h1>
+        <p>نحن هنا لمساعدتك 24/7</p>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+      <i data-lucide="search"></i>
+      <input type="text" id="searchInput" placeholder="ابحث عن إجابة... (مثال: أمان، معاملة، حظر)" />
+    </div>
+
+    <!-- Categories -->
+    <div class="categories stagger">
+      <div class="card" data-category="security">
+        <i data-lucide="shield"></i>
+        <p>الأمان والحماية</p>
+      </div>
+      <div class="card" data-category="transactions">
+        <i data-lucide="credit-card"></i>
+        <p>المعاملات</p>
+      </div>
+      <div class="card" data-category="notifications">
+        <i data-lucide="bell"></i>
+        <p>الإشعارات</p>
+      </div>
+      <div class="card" data-category="privacy">
+        <i data-lucide="lock"></i>
+        <p>الخصوصية</p>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-box" id="faqContainer">
+      <div class="box-header">
+        <i data-lucide="help-circle"></i>
+        <h2>الأسئلة الشائعة</h2>
+      </div>
+
+      <div class="faq" data-category="security">
+        <div class="question">كيف يحمي ShadowPay معاملاتي؟</div>
+        <div class="answer">يستخدم ShadowPay نظام ذكاء اصطناعي متطور لتحليل المعاملات في الوقت الفعلي. يتم فحص كل معاملة بواسطة خوارزميات التعلم الآلي للكشف عن أي نشاط مشبوه. إذا تم اكتشاف أي مخالفة، يتم إيقاف المعاملة فوراً وإخطارك لاتخاذ القرار المناسب.</div>
+      </div>
+
+      <div class="faq" data-category="security">
+        <div class="question">ماذا أفعل إذا كانت معاملة مشبوهة؟</div>
+        <div class="answer">عند اكتشاف معاملة مشبوهة، ستتلقى إشعاراً فورياً مع تفاصيل المعاملة. يمكنك قبول المعاملة إذا كانت آمنة، أو رفضها وإبلاغ فريق الأمان. يمكنك أيضاً التواصل مع الدعم الفني على الفور عبر الدردشة المباشرة.</div>
+      </div>
+
+      <div class="faq" data-category="transactions">
+        <div class="question">كم تستغرق عملية التحويل؟</div>
+        <div class="answer">تتم معظم التحويلات فورياً في غضون ثوانٍ قليلة. في بعض الحالات النادرة، قد تستغرق التحويلات حتى 5 دقائق حسب البنك المستلم. جميع التحويلات مؤمنة بالكامل.</div>
+      </div>
+
+      <div class="faq" data-category="transactions">
+        <div class="question">هل هناك رسوم على المعاملات؟</div>
+        <div class="answer">نعم، توجد رسوم بسيطة تبدأ من 0.5% حسب نوع المعاملة وحجمها. يمكنك الاطلاع على تفاصيل الرسوم قبل تأكيد أي عملية تحويل. الأعضاء المميزون يحصلون على خصومات تصل إلى 50%.</div>
+      </div>
+
+      <div class="faq" data-category="notifications">
+        <div class="question">كيف يمكنني تخصيص الإشعارات؟</div>
+        <div class="answer">يمكنك تخصيص الإشعارات من خلال الذهاب إلى الإعدادات > الإشعارات. يمكنك اختيار أنواع الإشعارات التي تريد استلامها (بريد إلكتروني، SMS، إشعارات داخل التطبيق)، وتحديد الأوقات المناسبة.</div>
+      </div>
+
+      <div class="faq" data-category="notifications">
+        <div class="question">لماذا لا تصلني الإشعارات؟</div>
+        <div class="answer">يرجى التأكد من: 1) تفعيل الإشعارات في إعدادات الجهاز، 2) تفعيل الإشعارات داخل التطبيق، 3) عدم وجود وضع "عدم الإزعاج" مفعلاً. إذا استمرت المشكلة، تواصل مع الدعم الفني.</div>
+      </div>
+
+      <div class="faq" data-category="privacy">
+        <div class="question">كيف يتم حماية بياناتي الشخصية؟</div>
+        <div class="answer">نستخدم أحدث تقنيات التشفير AES-256 لحماية جميع بياناتك. لا نشارك بياناتك مع أي طرف ثالث دون موافقتك المسبقة. جميع المدفوعات تتم عبر بوابات آمنة معتمدة عالمياً.</div>
+      </div>
+
+      <div class="faq" data-category="privacy">
+        <div class="question">هل يمكنني حذف حسابي بالكامل؟</div>
+        <div class="answer">نعم، يمكنك حذف حسابك في أي وقت من خلال الإعدادات > حذف الحساب. سيتم حذف جميع بياناتك بشكل نهائي بعد تأكيد العملية. يرجى العلم بأن هذه العملية لا يمكن التراجع عنها.</div>
+      </div>
+
+      <div class="faq">
+        <div class="question">كيف يمكنني إعادة تعيين كلمة المرور؟</div>
+        <div class="answer">يمكنك إعادة تعيين كلمة المرور من خلال شاشة تسجيل الدخول بالنقر على "نسيت كلمة المرور". ستتلقى رابط إعادة تعيين على بريدك الإلكتروني المسجل. تأكد من التحقق من صندوق البريد العشوائي إذا لم يصلك البريد.</div>
+      </div>
+
+      <div class="faq">
+        <div class="question">ما هي حدود التحويل اليومية؟</div>
+        <div class="answer">الحد الافتراضي للتحويل اليومي هو 10,000 دولار للحسابات العادية، و50,000 دولار للحسابات المميزة. يمكنك طلب زيادة الحدود بعد التحقق من هويتك.</div>
+      </div>
+    </div>
+
+    <div id="noResults" class="no-results">
+      <i data-lucide="search-x"></i>
+      <p>لا توجد نتائج مطابقة لبحثك</p>
+      <small>جرب كلمات مفتاحية مختلفة</small>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact fade-in-up">
+      <div class="box-header">
+        <i data-lucide="phone"></i>
+        <h2>تواصل معنا</h2>
+      </div>
+
+      <div class="contact-item" onclick="window.location.href='chat://open'">
+        <i data-lucide="message-square"></i>
+        <div>
+          <p>الدردشة المباشرة</p>
+          <span>متاح 24/7 - رد فوري</span>
+        </div>
+      </div>
+
+      <div class="contact-item" onclick="window.location.href='mailto:support@shadowpay.com'">
+        <i data-lucide="mail"></i>
+        <div>
+          <p>البريد الإلكتروني</p>
+          <span>support@shadowpay.com</span>
+        </div>
+      </div>
+
+      <div class="contact-item" onclick="window.location.href='tel:+9668001234567'">
+        <i data-lucide="phone"></i>
+        <div>
+          <p>الهاتف</p>
+          <span>+966 800 123 4567</span>
+        </div>
+      </div>
+
+      <div class="contact-item" onclick="window.location.href='https://wa.me/9668001234567'">
+        <i data-lucide="message-circle"></i>
+        <div>
+          <p>واتساب</p>
+          <span>دعم فوري عبر الواتساب</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // تأكد من تهيئة Lucide بعد تحميل الصفحة
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        setTimeout(() => {
+          if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+          }
+        }, 100);
+      }
+    });
+    
+    function goBack() {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.close();
+      }
+    }
+    
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const faqs = document.querySelectorAll('.faq');
+    const noResults = document.getElementById('noResults');
+    const faqContainer = document.getElementById('faqContainer');
+    
+    function filterFAQs() {
+      const searchTerm = searchInput.value.toLowerCase().trim();
+      let visibleCount = 0;
+      
+      faqs.forEach(faq => {
+        const question = faq.querySelector('.question').textContent.toLowerCase();
+        const answer = faq.querySelector('.answer').textContent.toLowerCase();
+        
+        if (searchTerm === '') {
+          faq.style.display = '';
+          visibleCount++;
+        } else if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+          faq.style.display = '';
+          visibleCount++;
+          faq.classList.add('active');
+        } else {
+          faq.style.display = 'none';
+        }
+      });
+      
+      if (visibleCount === 0 && searchTerm !== '') {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    }
+    
+    if (searchInput) {
+      searchInput.addEventListener('input', filterFAQs);
+    }
+    
+    // Category filtering
+    const categories = document.querySelectorAll('.card');
+    
+    categories.forEach(category => {
+      category.addEventListener('click', () => {
+        const cat = category.dataset.category;
+        if (searchInput) searchInput.value = '';
+        
+        faqs.forEach(faq => {
+          const faqCat = faq.dataset.category;
+          if (!cat || faqCat === cat) {
+            faq.style.display = '';
+          } else {
+            faq.style.display = 'none';
+          }
+        });
+        
+        if (noResults) noResults.style.display = 'none';
+        
+        categories.forEach(c => c.classList.remove('active'));
+        category.classList.add('active');
+      });
+    });
+    
+    // FAQ toggle
+    faqs.forEach(faq => {
+      faq.addEventListener('click', () => {
+        faq.classList.toggle('active');
+      });
+    });
+    
+    // Stagger animation observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    
+    document.querySelectorAll('.fade-in-up').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
